@@ -1974,6 +1974,8 @@ OREFR       FwStatus STDCALL PREFIX_OPT(OPT_PREFIX, fwiShear_32f_P4R)(const Fw32
 OREFR       FwStatus STDCALL PREFIX_OPT(OPT_PREFIX, fwiGetShearQuad )(FwiRect srcRoi, double quad[4][2], double xShear, double yShear, double xShift, double yShift);
 OREFR       FwStatus STDCALL PREFIX_OPT(OPT_PREFIX, fwiGetShearBound)(FwiRect srcRoi, double bound[2][2], double xShear, double yShear, double xShift, double yShift);
 
+#ifndef __SUNPRO_CC
+
 OREFR OSSE2 FwStatus STDCALL PREFIX_OPT(OPT_PREFIX, fwiFilterSharpen_8u_C1R)( const Fw8u * pSrc, int srcStep, Fw8u * pDst, int dstStep, FwiSize dstRoiSize );
 OREFR OSSE2 FwStatus STDCALL PREFIX_OPT(OPT_PREFIX, fwiFilterSharpen_16s_C1R)( const Fw16s * pSrc, int srcStep, Fw16s * pDst, int dstStep, FwiSize dstRoiSize );
 OREFR OSSE2 FwStatus STDCALL PREFIX_OPT(OPT_PREFIX, fwiFilterSharpen_32f_C1R)( const Fw32f * pSrc, int srcStep, Fw32f * pDst, int dstStep, FwiSize dstRoiSize );
@@ -2673,6 +2675,8 @@ OREFR OSSE2       FwStatus STDCALL PREFIX_OPT(OPT_PREFIX, fwiFilterLowpass_16s_A
 OREFR OSSE2       FwStatus STDCALL PREFIX_OPT(OPT_PREFIX, fwiFilterLowpass_32f_C1R)( const Fw32f * pSrc, int srcStep, Fw32f * pDst, int dstStep, FwiSize dstRoiSize, FwiMaskSize maskSize );
 OREFR OSSE2       FwStatus STDCALL PREFIX_OPT(OPT_PREFIX, fwiFilterLowpass_32f_C3R)( const Fw32f * pSrc, int srcStep, Fw32f * pDst, int dstStep, FwiSize dstRoiSize, FwiMaskSize maskSize );
 OREFR OSSE2       FwStatus STDCALL PREFIX_OPT(OPT_PREFIX, fwiFilterLowpass_32f_AC4R)( const Fw32f * pSrc, int srcStep, Fw32f * pDst, int dstStep, FwiSize dstRoiSize, FwiMaskSize maskSize );
+
+#endif
 
 OREFR OSSE2 OF10H   FwStatus PREFIX_OPT(OPT_PREFIX, fwiRGBToXYZ_8u_C3R        )( const Fw8u* pSrc, int srcStep, Fw8u* pDst, int dstStep, FwiSize roiSize );
 OREFR OSSE2 OF10H   FwStatus PREFIX_OPT(OPT_PREFIX, fwiRGBToXYZ_8u_AC4R       )( const Fw8u* pSrc, int srcStep, Fw8u* pDst, int dstStep, FwiSize roiSize );
