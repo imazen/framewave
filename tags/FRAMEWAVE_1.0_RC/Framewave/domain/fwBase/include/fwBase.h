@@ -500,7 +500,7 @@ AutoOff
 /*#Documentation
 <Chapter>
 <ChapterHeading>Library Version</ChapterHeading>
-<Paragraph>This chapter describes the FW function that provides library version information.</Paragraph> 
+<Paragraph>This<ChaptDesc> chapter describes the function that provides library version information.</ChaptDesc></Paragraph> 
 */
 
 /*#FunctionBlock - GetLibVersion
@@ -518,7 +518,7 @@ const FwLibraryVersion* STDCALL fwGetLibVersion ();
 /*#Documentation
 <Chapter>
 <ChapterHeading>Core Functions</ChapterHeading>
-<Paragraph>This chapter describes the status string, CPU type, CPU clocking, CPU initialization, threading control, and memory allocation functions.</Paragraph>
+<Paragraph>This<ChaptDesc> chapter describes the status string, CPU type, CPU clocking, CPU initialization, threading control, and memory allocation functions.</ChaptDesc></Paragraph>
 */
 
 /*#FunctionBlock - GetStatusString
@@ -599,37 +599,37 @@ todo:publish
 void         STDCALL fwFree( void * ptr );
 
 /*#FunctionBlock - AlignPtr
-todo:edit
+todo:approve
 #Technologies - REF
-#Short - align a buffer
-#Long - <Text>This function aligns a buffer pointed by <ParameterName>ptr</ParameterName> to the specified align boundary.</Text> 
+#Short - Align a buffer
+#Long - <Text>This function aligns the buffer pointed to by <ParameterName>ptr</ParameterName> to a specified alignment boundary.</Text> 
 */
 void *       STDCALL fwAlignPtr( void *ptr, int alignBytes);
 
 // Internal Functions
 
 /*#FunctionBlock - SetNumThreads_local
-todo:edit
+todo:approve
 #Technologies - REF
 #Short - SetNumThreads_local
-#Long - <Text>This function is for FW internal use.</Text> 
+#Long - <Text>This function is reserved for FW internal use.</Text> 
 #ReturnValues - fwStsNoErr
 */
 FwStatus    STDCALL fwSetNumThreads_local( unsigned int numThr );
 
 /*#FunctionBlock - Run
-todo:edit
+todo:approve
 #Technologies - REF
 #Short - Run
-#Long - <Text>This function is for FW internal use.</Text> 
+#Long - <Text>This function is reserved for FW internal use.</Text> 
 */
 void         STDCALL fwRun( WorkFn workFn, void* param );
 
 /*#FunctionBlock - Wait
-todo:edit
+todo:approve
 #Technologies - REF
 #Short - Wait
-#Long - <Text>This function is for FW internal use.</Text> 
+#Long - <Text>This function is reserved for FW internal use.</Text> 
 */
 void         STDCALL fwWait();
 
@@ -637,14 +637,14 @@ void         STDCALL fwWait();
 todo:publish
 #Technologies - REF
 #Short - GetInitType 
-#Long - <Text>This function is for FW internal use.</Text> 
+#Long - <Text>This function is reserved for FW internal use.</Text> 
 */
 int          STDCALL fwGetInitType();
 /*#FunctionBlock - BaseData
 todo:publish
 #Technologies - REF
 #Short - BaseData 
-#Long - <Text>This function is for FW internal use.</Text> 
+#Long - <Text>This function is reserved for FW internal use.</Text> 
 */
 void *       STDCALL fwBaseData();
 

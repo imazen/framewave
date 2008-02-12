@@ -35,26 +35,24 @@ FwHintAlgorithm - Hint to favor speed or accuracy.
 
 <SectionHeading>Base Library</SectionHeading>
 
-<Paragraph>Base Library functions perform essential support and initialization tasks.</Paragraph>
+<Paragraph>Base Library<SectDesc> functions are essential for primary tasks such as memory allocation and functions that manage the performance of other library functions.</SectDesc></Paragraph>
 
 <Paragraph>This section is organized as follows.</Paragraph>
 
-<BulletedList> 
-<Bullet><hlink><uri>need_link</uri><desc>Basic Concepts</desc></hlink> provides an overview of the information contained in the functional descriptions.</Bullet> 
-<Bullet><hlink><uri>need_link</uri><desc>Library Version</desc></hlink> describes the Framewave function that provides library version information.</Bullet> 
-<Bullet><hlink><uri>need_link</uri><desc>Core Functions</desc></hlink> describes the status string, CPU type, CPU clocking, CPU initialization, threading control, and memory allocation functions.</Bullet>
-</BulletedList>
+<SectLinks></SectLinks>
 
 <Paragraph>Within the section, the <Bold>Basic Concepts</Bold> chapter provides overview information related to the functions in the library, 
 and subsequent chapters provide detailed descriptions of library functions that perform operations of the same kind.</Paragraph>
 <Paragraph>Each detailed description consists of a <Bold>Function Name</Bold> followed by a short description, a <Bold>Synopsis</Bold> of the function syntax, 
 a list of function <Bold>Parameters</Bold>, a detailed <Bold>Description</Bold> of the function, and a list of <Bold>Return Values.</Bold></Paragraph> 
 <Paragraph>When a function is optimized for one or more technologies, a list of <Bold>Supported Technologies</Bold> is provided after the short description.</Paragraph>
-<Paragraph>The <hlink><uri>need_link</uri><desc>Function Quick Reference</desc></hlink> provides an index and snapshot view of function optimizations.</Paragraph>
 
+<RefLink></RefLink>
 
 <Chapter>
 <ChapterHeading>Basic Concepts</ChapterHeading>
+
+<Paragraph>This <ChaptDesc> chapter provides an overview of the information contained in the functional descriptions.</ChaptDesc></Paragraph>
 
 <Paragraph>Base library functional descriptions include the following types of information.</Paragraph>
 
