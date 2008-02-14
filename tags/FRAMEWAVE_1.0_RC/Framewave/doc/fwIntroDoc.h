@@ -107,11 +107,13 @@ fwStsResFloor - All result values are floored.
 <FrontLink>aa_007_tcd</FrontLink>
 </FrontHeading>
 
-<Paragraph>Copyright &#169; 2007-2008. All Rights Reserved.</Paragraph>
+<Paragraph>Copyright &#169; 2007-2008 The Framewave Group. All Rights Reserved.</Paragraph>
+<Paragraph>Framewave is a trademark of The Framewave Group.</Paragraph>
 <Paragraph>AMD is a registered trademark of Advanced Micro Devices, Inc.</Paragraph>
-<Paragraph>Microsoft, Windows, and Vista are registered trademarks of Microsoft Corporation.</Paragraph>
-<Paragraph>Sun and Solaris are registered trademarks of Sun Microsystems.</Paragraph>
+<Paragraph>Microsoft and Windows are registered trademarks of Microsoft Corporation.</Paragraph>
+<Paragraph>Sun and Solaris are registered trademarks of Sun Microsystems, Inc.</Paragraph>
 <Paragraph>Linux is a registered trademark of Linus Torvalds.</Paragraph>
+<Paragraph>Apple and Mac OS are registered trademarks of Apple, Inc.</Paragraph>
 
 </FrontSection>
 
@@ -125,16 +127,9 @@ fwStsResFloor - All result values are floored.
 <ChangeHistory>
 
 <ChangeEntry>
-<ChangeDate>10/2007</ChangeDate>
-<ChangeDescription>Added platform support for AMD Family 10h processors.</ChangeDescription> 
-<ChangeDescription>Added operating system support for Sun Solaris 32-bit and 64-bit operating systems.</ChangeDescription>
-<ChangeDescription>Added new JPEG, H.264 decode, DCT, and Dilate functions.</ChangeDescription>
-<ChangeDescription>Added additional fixed-precision functions to signal processing library.</ChangeDescription>
-</ChangeEntry>
-<ChangeEntry>
-<ChangeDate>11/2007</ChangeDate>
-<ChangeDescription>
-Added new Change History and Installation sections</ChangeDescription>
+<ChangeDate>02/2008</ChangeDate>
+<DocVersion>V1.0.0</DocVersion>
+<ChangeDescription>Initial release.</ChangeDescription> 
 </ChangeEntry>
 
 </ChangeHistory>
@@ -259,14 +254,15 @@ precisely reports the result of execution. The following return value definition
 <H1Link>aa_006_install</H1Link>
 </Heading1>
 
-<Paragraph>This section contains general information about installing and using Framewave.</Paragraph>
+<Paragraph>This section contains general information about installing and using Framewave. Please refer to the README 
+file in the installation package for the most recent information.</Paragraph>
 
 <Heading2>
 <H2Name>Library Files</H2Name>
 <H2Link>aa_006_install</H2Link>
 </Heading2>
 
-<Paragraph>The top-level directory contains the following files.</Paragraph>
+<Paragraph>The include directory contains the following files.</Paragraph>
 
 <Paragraph><Bold>fwBase.h </Bold>contains definitions of data types, data structures, 
 	       enumerations, and declarations for core functions.</Paragraph>
@@ -297,6 +293,8 @@ precisely reports the result of execution. The following return value definition
 <ParagraphIndent>H.264 Deblock filters</ParagraphIndent>
 <ParagraphIndent>Motion Compensation</ParagraphIndent>
 <ParagraphIndent>Motion Estimation</ParagraphIndent>
+<ParagraphIndent>MPEG-1:Decoder, Inverse DCT, Inverse Quantization, Reconstruction of DCT block, Variable Length decoding</ParagraphIndent>
+<ParagraphIndent>MPEG-2:Decoder, Inverse DCT, Inverse Quantization, Reconstruction of DCT block, Variable Length decoding</ParagraphIndent>
 
 <Paragraph><Bold>fwJPEG.h </Bold>contains function declarations for JPEG processing.</Paragraph>
 
@@ -322,25 +320,23 @@ address of the function during run time, the .lib files are used to link against
 
 <ParagraphIndent>The fwImage/fwSignal/fwBase/fwJPEG/fwVideo.dll files contain implemented functions.</ParagraphIndent>
 
-<ParagraphIndent>LIB Directories</ParagraphIndent>
-
-<ParagraphIndent>The fwImage/fwSignal/fwBase/fwJPEG/fwVideo.lib files are static libraries of 
-implemented functions.</ParagraphIndent>
- 
-<ParagraphIndent>The fwImaged/fwSignald/fwBased/fwJPEGd/fwVideod.lib files are static 
-release binaries with debug symbols.</ParagraphIndent>
-    
 <Paragraph><Bold>Linux&#174; Operating Systems</Bold></Paragraph>
 
 <ParagraphIndent>LIB Directories</ParagraphIndent>
 
-<ParagraphIndent>The fwImage/fwSignal/fwBase/fwJPEG/fwVideo.a files contain all static and dynamic linked libraries.</ParagraphIndent>     
+<ParagraphIndent>The libfwImage.so/libfwSignal.so/libfwBase.so/libfwJPEG.so/libfwVideo.so files contain all shared libraries.</ParagraphIndent>
 
 <Paragraph><Bold>Solaris&#174; Operating System</Bold></Paragraph>
 
 <ParagraphIndent>LIB Directories</ParagraphIndent>
 
-<ParagraphIndent>The fwImage/fwSignal/fwBase/fwJPEG/fwVideo.a files contain all static and dynamic linked libraries.</ParagraphIndent>
+<ParagraphIndent>The libfwImage.so/libfwSignal.so/libfwBase.so/libfwJPEG.so/libfwVideo.so files contain all shared libraries.</ParagraphIndent>
+
+<Paragraph><Bold>Apple&#174; Mac OS&#174; Operating Systems</Bold></Paragraph>
+
+<ParagraphIndent>LIB Directories</ParagraphIndent>
+
+<ParagraphIndent>The libfwImage.dylib/libfwSignal.dylib/libfwBase.dylib/libfwJPEG.dylib/libfwVideo.dylib files contain all shared libraries.</ParagraphIndent>
 
 <Heading2>
 <H2Name>Setting Up Framewave</H2Name>
@@ -349,7 +345,7 @@ release binaries with debug symbols.</ParagraphIndent>
 
 <Paragraph>Set up each type of installation as follows.</Paragraph>
 
-<Paragraph><Bold>Microsoft&#174; Windows&#174; Operating System</Bold></Paragraph>
+<Paragraph><Bold>Microsoft&#174; Windows&#174; Operating Systems</Bold></Paragraph>
 <Paragraph>Make sure the DLL files are in the search PATH using one of the following methods.</Paragraph>
 <BulletedList>  
 <Bullet>Copy the DLL files to the same folder as the project executable.</Bullet> 
@@ -370,55 +366,85 @@ Additional Library Directories</Bold>).</Paragraph>
 
 <Paragraph>To use the shared libraries, create the following symbolic links.</Paragraph>
 
-<Pseudo>     cd ExampleDir/fw_1.1_Lin64/lib
-     ln -sf ./libfwBase.so.1.1.0 libfwBase.so
-     ln -sf ./libfwImage.so.1.1.0 libfwImage.so
-     ln -sf ./libfwJPEG.so.1.1.0 libfwJPEG.so
-     ln -sf ./libfwSignal.so.1.1.0 libfwSignal.so
-     ln -sf ./libfwVideo.so.1.1.0 libfwVideo.so</Pseudo>
+<Pseudo>     cd ExampleDir/FW_1.0_Lin64/lib
+     ln -sf ./libfwBase.so.1.0.0 libfwBase.so
+     ln -sf ./libfwImage.so.1.0.0 libfwImage.so
+     ln -sf ./libfwJPEG.so.1.0.0 libfwJPEG.so
+     ln -sf ./libfwSignal.so.1.0.0 libfwSignal.so
+     ln -sf ./libfwVideo.so.1.0.0 libfwVideo.so</Pseudo>
      
-<Paragraph>Create similar symbolic links with the .so.1 extension as well.</Paragraph>
+<Paragraph>Create similar symbolic links with the .so.1 extension.</Paragraph>
 
 <Paragraph>To compile a cpp file that uses Framewave, for example test.cpp:</Paragraph>
 
-<Pseudo>     g++ -m64 -c -IExampleDir/fw_1.1_Lin64 test.cpp</Pseudo>
+<Pseudo>     g++ -m64 -c -IExampleDir/FW_1.0_Lin64 test.cpp</Pseudo>
 
 <Paragraph>All Framewave libraries have dependency on fwBase.</Paragraph>
 
 <ParagraphIndent>For example, to link with with the Image library,</ParagraphIndent> 
-<Pseudo>     g++ -m64 -LExampleDir/fw_1.1_Lin64/lib test.o -lfwImage -lfwBase</Pseudo>
+<Pseudo>     g++ -m64 -LExampleDir/FW_1.0_Lin64/lib test.o -lfwImage -lfwBase</Pseudo>
 
 <Paragraph>It may be necessary to explicitly link in the stdc++, pthreads, 
 or math libraries if they are not automatically linked in.</Paragraph> 
 
-<Paragraph>Before running the application, make sure the ExampleDir/fw_1.1_Lin64/lib 
+<Paragraph>Before running the application, make sure the ExampleDir/FW_1.0_Lin64/lib 
 is in the shared library search path for the environment.</Paragraph>
    
-<Paragraph><Bold>Solaris&#174; Operating System</Bold></Paragraph>
+<Paragraph><Bold>Sun&#174; Solaris&#174; Operating System</Bold></Paragraph>
 
 <Paragraph>Assume this is a 64-bit installation and the installation directory is "ExampleDir".</Paragraph>
 
 <Paragraph>To use the shared libraries, create the following symbolic links.</Paragraph>
 
-<Pseudo>     cd ExampleDir/fw_1.1_Sol64/lib
-     ln -sf ./libfwBase.so.1.1.0 libfwBase.so
-     ln -sf ./libfwImage.so.1.1.0 libfwImage.so
-     ln -sf ./libfwJPEG.so.1.1.0 libfwJPEG.so
-     ln -sf ./libfwSignal.so.1.1.0 libfwSignal.so
-     ln -sf ./libfwVideo.so.1.1.0 libfwVideo.so</Pseudo>
+<Pseudo>     cd ExampleDir/FW_1.0_Sol64/lib
+     ln -sf ./libfwBase.so.1.0.0 libfwBase.so
+     ln -sf ./libfwImage.so.1.0.0 libfwImage.so
+     ln -sf ./libfwJPEG.so.1.0.0 libfwJPEG.so
+     ln -sf ./libfwSignal.so.1.0.0 libfwSignal.so
+     ln -sf ./libfwVideo.so.1.0.0 libfwVideo.so</Pseudo>
      
-<Paragraph>Create similar symbolic links with the .so.1 extension as well.</Paragraph>
+<Paragraph>Create similar symbolic links with the .so.1 extension.</Paragraph>
 
 <Paragraph>To compile a cpp file that uses Framewave, for example test.cpp:</Paragraph>
 
-<Pseudo>     CC -m64 -c -IExampleDir/fw_1.1_Sol64 test.cpp</Pseudo>
+<Pseudo>     CC -m64 -c -IExampleDir/FW_1.0_Sol64 test.cpp</Pseudo>
 
 <Paragraph>All Framewave libraries have dependency on fwBase.</Paragraph> 
 
 <ParagraphIndent>For example, to link with with the Image library,</ParagraphIndent> 
-<Pseudo>     CC -m64 -LExampleDir/fw_1.1_Sol64/lib test.o -lfwImage -lfwBase -lrt</Pseudo>
+<Pseudo>     CC -m64 -LExampleDir/FW_1.0_Sol64/lib test.o -lfwImage -lfwBase -lrt</Pseudo>
 
-<Paragraph>Before running the application, make sure the ExampleDir/fw_1.1_Sol64/lib 
+<Paragraph>Before running the application, make sure the ExampleDir/FW_1.0_Sol64/lib 
+is in the shared library search path for the environment.</Paragraph>
+
+<Paragraph><Bold>Apple&#174; Mac OS&#174; Operating Systems</Bold></Paragraph>
+
+<Paragraph>Assume this is a 64-bit installation and the installation directory is "ExampleDir".</Paragraph>
+
+<Paragraph>To use the shared libraries, create the following symbolic links.</Paragraph>
+
+<Pseudo>     cd ExampleDir/FW_1.0_Mac64/lib
+    ln -sf ./libfwBase-1.0.dylib libfwBase.dylib
+    ln -sf ./libfwImage-1.0.dylib libfwImage.dylib
+    ln -sf ./libfwJPEG-1.0.dylib libfwJPEG.dylib
+    ln -sf ./libfwSignal-1.0.dylib libfwSignal.dylib
+    ln -sf ./libfwVideo-1.0.dylib libfwVideo.dylib</Pseudo>
+     
+<Paragraph>Create similar symbolic links with the .1.dylib extension.</Paragraph>
+
+<Paragraph>To compile a cpp file that uses Framewave, for example test.cpp:</Paragraph>
+
+<Pseudo>     g++ -m64 -c -IExampleDir/FW_1.0_Mac64 test.cpp</Pseudo>
+
+<Paragraph>All Framewave libraries have dependency on fwBase.</Paragraph> 
+
+<ParagraphIndent>For example, to link with with the Image library,</ParagraphIndent> 
+<Pseudo>     g++ -m64 -LExampleDir/FW_1.0_Mac64/lib test.o -lfwImage -lfwBase</Pseudo>
+
+<Paragraph>It may be necessary to explicitly link in the stdc++, pthreads, 
+or math libraries if they are not automatically linked in.</Paragraph> 
+
+<Paragraph>Before running the application, make sure the ExampleDir/FW_1.0_Mac64/lib 
 is in the shared library search path for the environment.</Paragraph>
 
 <Heading2>
@@ -427,7 +453,7 @@ is in the shared library search path for the environment.</Paragraph>
 </Heading2>
 
 <Paragraph>This section describes how to resolve errors that occur while linking code to 
-the Framewave static library for the Microsoft&#174; Windows&#174; operating system. 
+the Framewave static library for Microsoft&#174; Windows&#174; operating systems. 
 This information does not apply to code that links to the dynamic DLL (shared) version of 
 the Framewave library for Microsoft Windows, or to versions of the Framewave library for other operating systems.</Paragraph>
 
