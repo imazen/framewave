@@ -340,7 +340,7 @@ FwStatus STDCALL  fwiRGBToYCbCr411LS_MCU_8u16s_C3P3R  ( const Fw8u  *pSrcRGB, in
 
 /*#FunctionBlock - BGRToYCbCr444LS_MCU
 TODO:publish
-#Technologies - REF
+#Technologies - REF, SSE2
 #Short - Convert BGR data block to 4:4:4 YCbCr MCU
 #Long - <Text>These functions step through an 8X8 data block in a source buffer, convert the source data from the BGR color model to the YCbCr color space with 4:4:4 chroma sub-sampling, level-shift the unsigned values to signed values, create a minimum coded unit, and write the data to a destination buffer.</Text>
 <Text>The following formulas are used to convert blue, green, and red values to luminance and chrominance values.</Text>
@@ -362,7 +362,7 @@ FwStatus STDCALL  fwiBGR555ToYCbCr444LS_MCU_16u16s_C3P3R  ( const Fw16u *pSrcBGR
 
 /*#FunctionBlock - BGRToYCbCr422LS_MCU
 TODO:publish
-#Technologies - REF
+#Technologies - REF, SSE2
 #Short - Convert BGR data block to 4:2:2 YCbCr MCU
 #Long - <Text>These functions step through a 16X8 data block in a source buffer, convert the source data from the BGR color model to the YCbCr color space with 4:2:2 chroma sub-sampling, level-shift the unsigned values to signed values, create a minimum coded unit, and write the data to a destination buffer.</Text>
 <Text>The following formulas are used to convert blue, green, and red values to luminance and chrominance values.</Text>
@@ -385,7 +385,7 @@ FwStatus STDCALL  fwiBGR555ToYCbCr422LS_MCU_16u16s_C3P3R  ( const Fw16u *pSrcBGR
 
 /*#FunctionBlock - BGRToYCbCr411LS_MCU
 TODO:publish
-#Technologies - REF
+#Technologies - REF, SSE2
 #Short - Convert BGR data block to 4:1:1 YCbCr MCU
 #Long - <Text>These functions step through a 16X16 data block in a source buffer, convert the source data from the BGR color model to the YCbCr color space with 4:1:1 chroma sub-sampling, level-shift the unsigned values to signed values, create a minimum coded unit, and write the data to a destination buffer.</Text>
 <Text>The following formulas are used to convert blue, green, and red values to luminance and chrominance values.</Text>
@@ -919,13 +919,13 @@ TODO:publish
 FwStatus STDCALL fwiEncodeHuffmanStateFree_JPEG_8u        ( FwiEncodeHuffmanState *pEncHuffState );
 
 /*#FunctionBlock - EncodeHuffman8X8
-TODO:publish
+TODO:edit
 #Technologies - REF
 #Short - Encode data block with bit accumulation
 #Long - <Text>This function performs Huffman baseline encoding of an 8X8 data block of quantized DCT coefficients using the DC and AC encoding tables.</Text>
 <Text>The encoding process follows CCITT Rec. T.81, Annex F.1.2. The function writes only full bytes to the output buffer.</Text>
 <Text>Incomplete bits from data blocks in a stream are accumulated in the Huffman encode state structure.</Text>
-<Text>To place all the accumulated bits in the buffer, set the <Bold>bFlashState</Bold> bit to 1 before processing the last 8X8 block in the stream, or restart the encoded interval.</Text>
+<Text>To place all the accumulated bits into the encoded bitstream, set the <Bold>pSrc</Bold> to NULL <Bold>bFlushState</Bold> to 1. This should be done after encoding all the 8X8 blocks in the image or at the end of each restart interval.</Text>
 #ReturnValues - fwStsNoErr, fwStsNullPtrErr
 */
 FwStatus STDCALL fwiEncodeHuffman8x8_JPEG_16s1u_C1        ( const Fw16s *pSrc, Fw8u *pDst,
