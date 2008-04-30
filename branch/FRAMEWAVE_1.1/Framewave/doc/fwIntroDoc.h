@@ -90,8 +90,8 @@ fwStsLengthErr - Invalid string length.
 
 /*#Documentation
 
-<VersionNumber>1.0.1</VersionNumber>
-<VersionDate>March, 2008</VersionDate>
+<VersionNumber>1.1.0</VersionNumber>
+<VersionDate>May, 2008</VersionDate>
 <FrameMaster></FrameMaster>
 <HeaderMaster></HeaderMaster>
 <NavBar></NavBar>
@@ -137,6 +137,12 @@ fwStsLengthErr - Invalid string length.
 <ChangeDate>03/2008</ChangeDate>
 <ChangeVersion>1.0.1</ChangeVersion>
 <ChangeDescription>Removed Video Library.</ChangeDescription> 
+</ChangeEntry>
+<ChangeEntry>
+<ChangeDate>05/2008</ChangeDate>
+<ChangeVersion>1.1.0</ChangeVersion>
+<ChangeDescription>Updated the following functions.</ChangeDescription> 
+<ChangeDescription>Added the following functions.</ChangeDescription> 
 </ChangeEntry>
 
 </ChangeHistory>
