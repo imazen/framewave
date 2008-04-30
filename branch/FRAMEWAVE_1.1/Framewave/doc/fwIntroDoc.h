@@ -84,6 +84,7 @@ fwStsDivByZeroErr - The divisor is zero.
 fwStsH263VLCCodeErr - Illegal Huffman code encountered during VLC stream processing.
 fwStsOutOfRangeErr - An a rgument is out of range or a point is outside an image.
 fwStsResFloor - All result values are floored.
+fwStsLengthErr - Invalid string length.
 
 */
 

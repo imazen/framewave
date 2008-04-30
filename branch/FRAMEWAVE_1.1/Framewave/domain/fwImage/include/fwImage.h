@@ -2233,7 +2233,7 @@ FwStatus STDCALL fwiYCbCr422ToBGR444Dither_8u16u_P3C3R( const Fw8u * const pSrc[
 
 /*#FunctionBlock - RGBToYCbCr420
 todo:publish
-#Technologies - REF
+#Technologies - REF, SSE2
 #Short - Convert from RGB to YCbCr with 4:2:0 sampling
 #Long - <Text>This function steps through an ROI in a source buffer, converts the source data from the RGB color model to the YCbCr color space with 4:2:0 chroma subsampling, and writes the converted data to a destination buffer.</Text>
 <Text>A gamma-corrected RGB image (<ParameterName>pSrc</ParameterName>) is converted to a YCbCr image with 4:2:0 chroma subsampling.</Text>
@@ -3155,8 +3155,8 @@ FwStatus STDCALL fwiHSVToRGB_16u_AC4R     ( const Fw16u *pSrc, int srcStep, Fw16
 
 
 /*#FunctionBlock - ColorToGray
-todo:publish
-#Technologies - REF
+todo:edit
+#Technologies - REF, SSE2
 #Short - Converts three channel color image to gray scale using custom coefficients.
 #Long - <Text>The C3C1 version of the function steps through an ROI in a source buffer, converts a 3-channel color image to a gray scale image and writes the converted data to a destination buffer.</Text>
 <Text>The AC4C1 version of the function steps through an ROI in a source buffer, converts a 4-channel color image to a gray scale image and writes the converted data to a destination buffer.</Text>
@@ -3173,8 +3173,8 @@ FwStatus STDCALL fwiColorToGray_32f_AC4C1R(const Fw32f* pSrc, int srcStep, Fw32f
 
 
 /*#FunctionBlock - RGBToGray
-todo:publish
-#Technologies - REF
+todo:edit
+#Technologies - REF, SSE2
 #Short - Converts three channel RGB color image to gray scale using fixed coefficients.
 #Long - <Text>The C3C1 version of the function steps through an ROI in a source buffer, converts a 3-channel RGB color image to a gray scale image and writes the converted data to a destination buffer.</Text>
 <Text>The AC4C1 version of the function steps through an ROI in a source buffer, converts a 4-channel color image to a gray scale image and writes the converted data to a destination buffer.</Text>
@@ -3220,10 +3220,10 @@ FwStatus STDCALL fwiCbYCr422ToYCbCr420_8u_C2P3R       ( const Fw8u *pSrc, int sr
 */
 
 /*#FunctionBlock - Sum
-todo:publish
+todo:edit
 #Technologies - REF, SSE2, F10H
 #Short - Perfom sum operation on the image data.
-#Long - <Text>These functions performs sum operation on the given image data.</Text>
+#Long - <Text>These functions perform sum operation on the given image data.</Text>
 */
 
 FwStatus STDCALL fwiSum_8u_C1R (const Fw8u* pSrc, int srcStep,FwiSize roiSize, Fw64f* pSum);

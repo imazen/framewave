@@ -196,11 +196,11 @@ FwStatus STDCALL fwiDecodeExpGolombOne_H264_1u16s               ( Fw32u **ppBitS
 //  H.264 Deblocking Filtering
 // ------------------------------------------------
 /*#FunctionBlock - FilterDeblockingLuma_VerEdge_H264
-TODO:publish
+TODO:edit
 #Technologies - REF
 #Short - Deblock luma macroblock vertical edges
-#Long - <Text>This function steps through a source 16X16 luma macroblock and filters artificial discontinuities at block boundaries caused by quantization and other encoding artifacts. It operates on internal or external vertical edges of the macroblock.
-Results are written back to the source location.</Text>
+#Long - <Text>This function steps through a 16X16 luma macroblock in the source buffer and filters artificial discontinuities at block boundaries caused by quantization and other encoding artifacts. It operates on internal and external vertical edges of the macroblock.
+Results are written back to the source location. The function performs filtering in accordance with section 8.7.2 of H.264 standard(JVTG050).</Text>
 #ReturnValues - fwStsNoErr, fwStsNullPtrErr
 */
 FwStatus STDCALL fwiFilterDeblockingLuma_VerEdge_H264_8u_C1IR   ( Fw8u *pSrcDst    , Fw32s srcDstStep,
@@ -208,11 +208,11 @@ FwStatus STDCALL fwiFilterDeblockingLuma_VerEdge_H264_8u_C1IR   ( Fw8u *pSrcDst 
                                                                     Fw8u *pThresholds, Fw8u *pBS );
 
 /*#FunctionBlock - FilterDeblockingLuma_HorEdge_H264
-TODO:publish
+TODO:edit
 #Technologies - REF
 #Short - Deblock luma macroblock horizontal edges
-#Long - <Text>This function steps through a source 16X16 luma macroblock and filters artificial discontinuities at block boundaries caused by quantization and other encoding artifacts. It operates on internal or external horizontal edges of the macroblock.
-Results are written back to the source location.</Text>
+#Long - <Text>This function steps through a 16X16 luma macroblock in the source buffer and filters artificial discontinuities at block boundaries caused by quantization and other encoding artifacts. It operates on internal and external horizontal edges of the macroblock.
+Results are written back to the source location. The function performs filtering in accordance with section 8.7.2 of H.264 standard(JVTG050).</Text>
 #ReturnValues - fwStsNoErr, fwStsNullPtrErr
 */
 FwStatus STDCALL fwiFilterDeblockingLuma_HorEdge_H264_8u_C1IR   ( Fw8u *pSrcDst    , Fw32s srcDstStep,
@@ -220,11 +220,11 @@ FwStatus STDCALL fwiFilterDeblockingLuma_HorEdge_H264_8u_C1IR   ( Fw8u *pSrcDst 
                                                                     Fw8u *pThresholds, Fw8u *pBS );
 
 /*#FunctionBlock - FilterDeblockingChroma_HorEdge_H264
-TODO:publish
+TODO:edit
 #Technologies - REF
 #Short - Deblock chroma macroblock horizontal edges
-#Long - <Text>This function steps through a source 8X8 chroma macroblock and filters artificial discontinuities at block boundaries caused by quantization and other encoding artifacts. It operates on internal or external horizontal edges of the macroblock.
-Results are written back to the source location.</Text>
+#Long - <Text>This function steps through a 8X8 chroma macroblock in the source and filters artificial discontinuities at block boundaries caused by quantization and other encoding artifacts. It operates on internal and external horizontal edges of the macroblock.
+Results are written back to the source location. The function performs filtering in accordance with section 8.7.2 of H.264 standard(JVTG050).</Text>
 #ReturnValues - fwStsNoErr, fwStsNullPtrErr
 */
 FwStatus STDCALL fwiFilterDeblockingChroma_HorEdge_H264_8u_C1IR ( Fw8u *pSrcDst    , Fw32s srcDstStep,
@@ -232,11 +232,11 @@ FwStatus STDCALL fwiFilterDeblockingChroma_HorEdge_H264_8u_C1IR ( Fw8u *pSrcDst 
                                                                     Fw8u *pThresholds, Fw8u *pBS );
 
 /*#FunctionBlock - FilterDeblockingChroma_VerEdge_H264
-TODO:publish
+TODO:edit
 #Technologies - REF
 #Short - Deblock chroma macroblock vertical edges
-#Long - <Text>This function steps through a source 8X8 chroma macroblock and filters artificial discontinuities at block boundaries caused by quantization and other encoding artifacts. It operates on internal or external vertical edges of the macroblock.
-Results are written back to the source location.</Text>
+#Long - <Text>This function steps through a 8X8 chroma macroblock in the source buffer and filters artificial discontinuities at block boundaries caused by quantization and other encoding artifacts. It operates on internal and external vertical edges of the macroblock.
+Results are written back to the source location. The function performs filtering in accordance with section 8.7.2 of H.264 standard(JVTG050).</Text>
 #ReturnValues - fwStsNoErr, fwStsNullPtrErr
 */
 FwStatus STDCALL fwiFilterDeblockingChroma_VerEdge_H264_8u_C1IR ( Fw8u *pSrcDst    , Fw32s srcDstStep,
