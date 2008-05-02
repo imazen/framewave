@@ -2287,7 +2287,7 @@ todo:publish
 FwStatus STDCALL fwiYCbCr420ToRGB_8u_P3C3R            ( const Fw8u * const pSrc[3], int srcStep[3], Fw8u  *pDst, int dstStep, FwiSize roiSize );
 
 /*#FunctionBlock - YCbCr422ToYCbCr420
-todo:approve
+todo:publish
 #Technologies - REF
 #Short - Convert from YCbCr with 4:2:2 sampling to YCbCr with 4:2:0 sampling
 #Long - <Text>These functions step through an ROI in a source buffer or buffers, convert the source data from the YCbCr color space with 4:2:2 chroma subsampling to YCbCr color space with 4:2:0 chroma subsampling, and writes the converted data to a destination buffer or buffers.</Text>
@@ -3155,7 +3155,7 @@ FwStatus STDCALL fwiHSVToRGB_16u_AC4R     ( const Fw16u *pSrc, int srcStep, Fw16
 
 
 /*#FunctionBlock - ColorToGray
-todo:approve
+todo:publish
 #Technologies - REF, SSE2
 #Short - Convert a three-channel color image to gray scale using custom coefficients
 #Long - <Text>The C3C1 version of the function steps through an ROI in a source buffer, converts a three-channel color image to a gray scale image and writes the converted data to a destination buffer.</Text>
@@ -3173,7 +3173,7 @@ FwStatus STDCALL fwiColorToGray_32f_AC4C1R(const Fw32f* pSrc, int srcStep, Fw32f
 
 
 /*#FunctionBlock - RGBToGray
-todo:approve
+todo:publish
 #Technologies - REF, SSE2
 #Short - Convert a three-channel RGB color image to gray scale using fixed coefficients
 #Long - <Text>The C3C1 version of the function steps through an ROI in a source buffer, converts a three-channel RGB color image to a gray scale image and writes the converted data to a destination buffer.</Text>
@@ -3220,7 +3220,7 @@ FwStatus STDCALL fwiCbYCr422ToYCbCr420_8u_C2P3R       ( const Fw8u *pSrc, int sr
 */
 
 /*#FunctionBlock - Sum
-todo:approve
+todo:publish
 #Technologies - REF, SSE2
 #Short - Sum image data
 #Long - <Text>These functions step through an ROI in a source buffer, sum the image data, and write the sum to a destination buffer.</Text>
