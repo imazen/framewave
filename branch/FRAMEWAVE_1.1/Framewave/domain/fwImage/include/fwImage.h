@@ -3221,7 +3221,7 @@ FwStatus STDCALL fwiCbYCr422ToYCbCr420_8u_C2P3R       ( const Fw8u *pSrc, int sr
 
 /*#FunctionBlock - Sum
 todo:approve
-#Technologies - REF, SSE2, F10H
+#Technologies - REF, SSE2
 #Short - Sum image data
 #Long - <Text>These functions step through an ROI in a source buffer, sum the image data, and write the sum to a destination buffer.</Text>
 */
