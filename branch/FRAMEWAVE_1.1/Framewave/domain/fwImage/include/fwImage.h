@@ -2292,8 +2292,8 @@ todo:publish
 #Short - Convert from YCbCr with 4:2:2 sampling to YCbCr with 4:2:0 sampling
 #Long - <Text>These functions step through an ROI in a source buffer or buffers, convert the source data from the YCbCr color space with 4:2:2 chroma subsampling to YCbCr color space with 4:2:0 chroma subsampling, and writes the converted data to a destination buffer or buffers.</Text>
 <Text>The source buffer can be two-channel or three-planar data. The destination is planar data with two or three planes.</Text>
-</Text> The format of the two-channel data is Y1, Cb1, Y2, Cr1, Y3, Cb2, Y4, Cr2... etc</Text>
-</Text> The format of the two-plane data is Y1, Y2, Y3, Y4... etc in the first plane and Cb1, Cr1, Cb2, Cr2... etc in the second plane.</Text>
+<Text> The format of the two-channel data is Y1, Cb1, Y2, Cr1, Y3, Cb2, Y4, Cr2... etc</Text>
+<Text> The format of the two-plane data is Y1, Y2, Y3, Y4... etc in the first plane and Cb1, Cr1, Cb2, Cr2... etc in the second plane.</Text>
 #ReturnValues - fwStsNoErr, fwStsNullPtrErr, fwStsSizeErr
 */
 
@@ -3213,6 +3213,7 @@ TODO:publish
 FwStatus STDCALL fwiCbYCr422ToYCbCr420_8u_C2P3R       ( const Fw8u *pSrc, int srcStep, Fw8u *pDst[3], int dstStep[3], FwiSize roiSize );
 
 /*#Documentation
+</Chapter>
 
 <Chapter>
 <ChapterHeading>Statistical Functions</ChapterHeading>
