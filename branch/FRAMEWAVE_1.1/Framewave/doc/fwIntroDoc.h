@@ -442,6 +442,7 @@ file in the installation package for the most recent information.</Paragraph>
 <ParagraphIndent>H.264 Reconstruction</ParagraphIndent>
 <ParagraphIndent>H.264 Intra-predict</ParagraphIndent>
 <ParagraphIndent>H.264 Interpolation</ParagraphIndent>
+<ParagraphIndent>H.264 Deblock Filtering</ParagraphIndent>
 <ParagraphIndent>Motion Compensation</ParagraphIndent>
 <ParagraphIndent>Motion Estimation</ParagraphIndent>
 <ParagraphIndent>MPEG-1:Decoder, Inverse DCT, Inverse Quantization, Reconstruction of DCT block, Variable Length decoding</ParagraphIndent>
