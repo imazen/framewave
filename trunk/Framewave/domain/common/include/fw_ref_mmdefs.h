@@ -6,6 +6,10 @@ This software is subject to the Apache v2.0 License.
 #ifndef __FW_REF_MMDEFS_H__
 #define __FW_REF_MMDEFS_H__
 
+#ifdef _M_X64
+  #define WIN64
+#endif
+
 #ifdef BLD_REF_ONLY
 
     #define __m64   Ref_m64
