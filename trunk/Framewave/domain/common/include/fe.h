@@ -7,6 +7,8 @@ This software is subject to the Apache v2.0 License.
 #define __FE_H__
 #include "FwSharedCode_SSE2.h"
 
+#define DISPATCH DT_SSE2
+
 #pragma warning (disable: 4512)
 #pragma warning (disable: 4328)
 

@@ -9,6 +9,9 @@ This software is subject to the Apache v2.0 License.
 #include "fwdev.h"
 #include "FwSharedCode.h"
 
+#include "SSEPlus\include\map\SSEPlus_MAP_SSE2.h"
+#include "SSEPlus\include\convert\SSEPlus_convert_SSE2.h"
+
 namespace OPT_LEVEL
 {
 

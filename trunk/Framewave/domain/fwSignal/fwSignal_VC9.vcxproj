@@ -189,6 +189,8 @@
     </CustomBuildStep>
     <ClCompile>
       <AdditionalIncludeDirectories>$(SolutionDir)\Framewave\domain\$(ProjectName)\include;$(SolutionDir)\Framewave\domain\common\include;$(SolutionDir)\Framewave\sdk;$(SolutionDir)\Framewave\domain\fwBase\include;$(SolutionDir)\Framewave\domain\common\include\Arithmetic\Impl;$(SolutionDir)\Framewave\sdk\cbl;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>
+      </PreprocessorDefinitions>
     </ClCompile>
     <Link>
       <RandomizedBaseAddress>false</RandomizedBaseAddress>

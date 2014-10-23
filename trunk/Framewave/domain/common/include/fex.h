@@ -360,7 +360,7 @@ namespace PREFIX_OPT(OPT_PREFIX, FE_PRIVATE)
       B1St( FE & fe, const TS1* s1,int len, U32 bytesPerThread )
        :B0St< FE >( fe, len, bytesPerThread )
       {  
-         STATIC_ASSERT( ALG_1D == alg );
+         static_assert( ALG_1D == alg, "err" );
          Run( s1,len );
       }
 
@@ -368,7 +368,7 @@ namespace PREFIX_OPT(OPT_PREFIX, FE_PRIVATE)
       B1St( FE & fe, const TS1* s1, int s1Step,ASZ roi, U32 bytesPerThread )
        :B0St< FE >( fe, roi, bytesPerThread,s1Step,0,0,0)
       {   
-         STATIC_ASSERT( ALG_2D == alg );
+         static_assert( ALG_2D == alg, "err" );
          Run( s1,roi.height );
       }
    };
@@ -527,7 +527,7 @@ namespace PREFIX_OPT(OPT_PREFIX, FE_PRIVATE)
                      const TS2* s2, int len, U32 bytesPerThread )
        :B0St< FE >( fe, len, bytesPerThread )
       {   
-         STATIC_ASSERT( ALG_1D == alg );
+         static_assert( ALG_1D == alg, "err" );
          Run( s1, s2,len );
       }
 
@@ -536,7 +536,7 @@ namespace PREFIX_OPT(OPT_PREFIX, FE_PRIVATE)
                      const TS2* s2, int s2Step,ASZ roi, U32 bytesPerThread )
        :B0St< FE >( fe, roi, bytesPerThread,s1Step, s2Step,0,0)
       {   
-         STATIC_ASSERT( ALG_2D == alg );
+         static_assert( ALG_2D == alg, "err" );
          Run( s1, s2,roi.height );
       }
    };

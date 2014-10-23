@@ -234,6 +234,7 @@
     </CustomBuildStep>
     <ClCompile>
       <AdditionalIncludeDirectories>include;$(SolutionDir)\Framewave\sdk;$(SolutionDir)\Framewave\sdk\boost_1_34_0;../common/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>BLD_REF_ONLY</PreprocessorDefinitions>
     </ClCompile>
     <Link>
       <RandomizedBaseAddress>false</RandomizedBaseAddress>

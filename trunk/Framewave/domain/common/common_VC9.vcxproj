@@ -213,7 +213,8 @@
       <Command />
     </CustomBuildStep>
     <ClCompile>
-      <AdditionalIncludeDirectories>$(SolutionDir)\Framewave\domain\common\include;$(SolutionDir)\Framewave\sdk;$(SolutionDir)\Framewave\domain\fwBase\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)\Framewave\domain\common\include;$(SolutionDir)\Framewave\sdk;$(SolutionDir)\Framewave\domain\fwBase\include;$(SolutionDir)\Framewave\domain\common\include\Arithmetic\Impl;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>BLD_REF_ONLY</PreprocessorDefinitions>
     </ClCompile>
     <Link>
       <RandomizedBaseAddress>false</RandomizedBaseAddress>
