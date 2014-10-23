@@ -38,7 +38,7 @@ This software is subject to the Apache v2.0 License.
 //=======================================
 //    Static Assert
 //=======================================
-#define static_assert_x( arg ) static_assert_x<arg>()
+//#define static_assert( arg ) static_assert<arg>()
 
 
 //=======================================
@@ -83,15 +83,15 @@ namespace Const
 
 namespace OPT_LEVEL
 {
-
+	/*
     template<bool b>
-    struct static_assert_x {};
+    struct static_assert {};
     template<>
-    struct static_assert_x<false>
+	struct static_assert<false>
     {
         private:
-            static_assert_x();
-    };
+			static_assert();
+    };*/
 } // namespace OPT_LEVEL
 
 #define COMPILE_TIME_ASSERT(expr) typedef char __COMPILE_TIME_ASSERT__[(expr)?1:-1];

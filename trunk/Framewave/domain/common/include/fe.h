@@ -1608,7 +1608,7 @@ namespace PREFIX_OPT(OPT_PREFIX, FE_PRIVATE)
       B1( FE & fe, TD1 *pDst, int len, U32 bytesPerThread )  //1D
        :B0< FE >   ( fe, len, bytesPerThread )        
       {  
-         STATIC_ASSERT( ALG_1D == alg );
+         static_assert( ALG_1D == alg, "err" );
          Run( pDst, len );             
       }
 
@@ -1616,7 +1616,7 @@ namespace PREFIX_OPT(OPT_PREFIX, FE_PRIVATE)
       B1( FE & fe, TD1 *pDst, int d1Step, ASZ roi, U32 bytesPerThread )
        :B0< FE >( fe, roi, bytesPerThread,0,0,0,0,d1Step,0,0,0)  
       {  
-         STATIC_ASSERT( ALG_2D == alg );
+         static_assert( ALG_2D == alg, "err" );
          Run( pDst, roi.height );       
       }           
    };
@@ -1810,7 +1810,7 @@ namespace PREFIX_OPT(OPT_PREFIX, FE_PRIVATE)
       B2( FE & fe, const TS1* pSrc1, TD1 *pDst, int len, U32 bytesPerThread )  
        :B0< FE >( fe, len, bytesPerThread )        
       {  
-         STATIC_ASSERT( ALG_1D == alg );
+         static_assert( ALG_1D == alg, "err" );
          Run( pSrc1, pDst, len );             
       }  
 
@@ -1819,7 +1819,7 @@ namespace PREFIX_OPT(OPT_PREFIX, FE_PRIVATE)
                          TD1 *pDst, int d1Step, ASZ roi, U32 bytesPerThread )
        :B0< FE >( fe, roi, bytesPerThread,s1Step,0,0,0,d1Step,0,0,0 )         
       {   
-         STATIC_ASSERT( ALG_2D == alg );
+		   static_assert(ALG_2D == alg, "err");
          Run( pSrc1, pDst, roi.height );     
       }       
    };
@@ -2021,7 +2021,7 @@ namespace PREFIX_OPT(OPT_PREFIX, FE_PRIVATE)
                          TD1 * pDst, int len, U32 bytesPerThread )
        :B0< FE >( fe, len, bytesPerThread )
       {   
-         STATIC_ASSERT( ALG_1D == alg );
+		   static_assert(ALG_1D == alg, "err");
          Run( pSrc1, pSrc2, pDst, len );         
       }
 
@@ -2031,7 +2031,7 @@ namespace PREFIX_OPT(OPT_PREFIX, FE_PRIVATE)
                          TD1 * pDst,  int d1Step, ASZ roi, U32 bytesPerThread )
        :B0< FE >( fe, roi, bytesPerThread,s1Step, s2Step,0,0,d1Step,0,0,0)
       {   
-         STATIC_ASSERT( ALG_2D == alg );
+		   static_assert(ALG_2D == alg, "err");
          Run( pSrc1, pSrc2, pDst, roi.height );         
       }        
    };
@@ -2241,7 +2241,7 @@ namespace PREFIX_OPT(OPT_PREFIX, FE_PRIVATE)
                    const TS3* pSrc3,        TD1 * pDst, int len, U32 bytesPerThread )
        :B0< FE >( fe, len, bytesPerThread  )         
       {  
-         STATIC_ASSERT( ALG_1D == alg );
+         static_assert( ALG_1D == alg, "err" );
          Run( pSrc1, pSrc2, pSrc3, pDst, len );              
       }
 
@@ -2250,7 +2250,7 @@ namespace PREFIX_OPT(OPT_PREFIX, FE_PRIVATE)
                    const TS3* pSrc3,int s3Step,       TD1 * pDst, int d1Step, ASZ roi, U32 bytesPerThread )
        :B0< FE >( fe, roi, bytesPerThread,s1Step, s2Step, s3Step,0,d1Step,0,0,0)         
       {  
-         STATIC_ASSERT( ALG_2D == alg );
+         static_assert( ALG_2D == alg, "err" );
          Run( pSrc1, pSrc2, pSrc3, pDst, roi.height );              
       }       
    };
@@ -2467,7 +2467,7 @@ namespace PREFIX_OPT(OPT_PREFIX, FE_PRIVATE)
                    const TS3* pSrc3, const TS4* pSrc4,       TD1 * pDst, int len, U32 bytesPerThread )
        :B0< FE >( fe, len, bytesPerThread  )         
       {  
-         STATIC_ASSERT( ALG_1D == alg );
+         static_assert( ALG_1D == alg, "err" );
          Run( pSrc1, pSrc2, pSrc3,pSrc4, pDst, len );              
       }
 
@@ -2476,7 +2476,7 @@ namespace PREFIX_OPT(OPT_PREFIX, FE_PRIVATE)
                    const TS3* pSrc3,int s3Step, const TS4* pSrc4,int s4Step,       TD1 * pDst, int d1Step, ASZ roi, U32 bytesPerThread )
        :B0< FE >( fe, roi, bytesPerThread,s1Step, s2Step, s3Step,s4Step,d1Step,0,0,0)         
       {  
-         STATIC_ASSERT( ALG_2D == alg );
+         static_assert( ALG_2D == alg, "err" );
          Run( pSrc1, pSrc2, pSrc3,pSrc4, pDst, roi.height );              
       }       
    };
@@ -2703,7 +2703,7 @@ namespace PREFIX_OPT(OPT_PREFIX, FE_PRIVATE)
                    const TS3* pSrc3,TD1 * pDst1,TD2 * pDst2,TD3 * pDst3, int len, U32 bytesPerThread )
        :B0< FE >( fe, len, bytesPerThread  )         
       {  
-         STATIC_ASSERT( ALG_1D == alg );
+         static_assert( ALG_1D == alg, "err" );
          Run( pSrc1, pSrc2, pSrc3,pDst1,pDst2,pDst3, len );              
       }
 
@@ -2712,7 +2712,7 @@ namespace PREFIX_OPT(OPT_PREFIX, FE_PRIVATE)
                    const TS3* pSrc3,int s3Step, TD1 * pDst1, int d1Step,TD2 * pDst2, int d2Step,TD3 * pDst3, int d3Step, ASZ roi, U32 bytesPerThread )
        :B0< FE >( fe, roi, bytesPerThread,s1Step, s2Step, s3Step,0,d1Step,d2Step,d3Step,0)         
       {  
-         STATIC_ASSERT( ALG_2D == alg );
+         static_assert( ALG_2D == alg, "err" );
          Run( pSrc1, pSrc2, pSrc3,pDst1,pDst2,pDst3, roi.height );              
       }       
    };
@@ -2957,7 +2957,7 @@ namespace PREFIX_OPT(OPT_PREFIX, FE_PRIVATE)
                    const TS3* pSrc3,const TS4* pSrc4,TD1 * pDst1,TD2 * pDst2,TD3 * pDst3, TD4 * pDst4,int len, U32 bytesPerThread )
        :B0< FE >( fe, len, bytesPerThread  )         
       {  
-         STATIC_ASSERT( ALG_1D == alg );
+         static_assert( ALG_1D == alg, "err" );
          Run( pSrc1, pSrc2, pSrc3,pSrc4,pDst1,pDst2,pDst3,pDst4, len );              
       }
 
@@ -2966,7 +2966,7 @@ namespace PREFIX_OPT(OPT_PREFIX, FE_PRIVATE)
                    const TS3* pSrc3,int s3Step, const TS4* pSrc4,int s4Step, TD1 * pDst1, int d1Step,TD2 * pDst2, int d2Step,TD3 * pDst3,int d3Step,TD4 * pDst4,int d4Step, ASZ roi, U32 bytesPerThread )
        :B0< FE >( fe, roi, bytesPerThread,s1Step, s2Step, s3Step,s4Step,d1Step,d2Step,d3Step,d4Step)         
       {  
-         STATIC_ASSERT( ALG_2D == alg );
+         static_assert( ALG_2D == alg, "err" );
          Run( pSrc1, pSrc2, pSrc3,pSrc4,pDst1,pDst2,pDst3,pDst4, roi.height );              
       }       
    };
@@ -3180,7 +3180,7 @@ namespace PREFIX_OPT(OPT_PREFIX, FE_PRIVATE)
                     TD2* pDst2,        TD3 * pDst3, int len, U32 bytesPerThread )
        :B0< FE >( fe, len, bytesPerThread  )         
       {  
-         STATIC_ASSERT( ALG_1D == alg );
+         static_assert( ALG_1D == alg, "err" );
          Run( pSrc1, pDst1, pDst2, pDst3, len );              
       }
 
@@ -3189,7 +3189,7 @@ namespace PREFIX_OPT(OPT_PREFIX, FE_PRIVATE)
                     TD2 * pDst2,int d2Step,       TD3 * pDst3, int d3Step, ASZ roi, U32 bytesPerThread )
        :B0< FE >( fe, roi, bytesPerThread,s1Step, 0, 0,0,d1Step,d2Step,d3Step,0)         
       {  
-         STATIC_ASSERT( ALG_2D == alg );
+         static_assert( ALG_2D == alg, "err" );
          Run( pSrc1, pDst1, pDst2, pDst3, roi.height );              
       }       
    };
@@ -3420,7 +3420,7 @@ namespace PREFIX_OPT(OPT_PREFIX, FE_PRIVATE)
                                            TD4 * pDst4, int len, U32 bytesPerThread )
             :B0< FE >( fe, len, bytesPerThread  )         
         {  
-            STATIC_ASSERT( ALG_1D == alg );
+            static_assert( ALG_1D == alg, "err" );
             Run( pSrc1, pDst1, pDst2, pDst3,pDst4, len );              
         }
         B1S4D( FE & fe, const TS1* pSrc1,int s1Step,  TD1 * pDst1,int d1Step, 
@@ -3429,7 +3429,7 @@ namespace PREFIX_OPT(OPT_PREFIX, FE_PRIVATE)
                                                       TD4 * pDst4, int d4Step, ASZ roi, U32 bytesPerThread )
             :B0< FE >( fe, roi, bytesPerThread,s1Step, 0, 0,0,d1Step,d2Step,d3Step,d4Step)         
         {  
-            STATIC_ASSERT( ALG_2D == alg );
+            static_assert( ALG_2D == alg, "err" );
             Run( pSrc1, pDst1, pDst2, pDst3,pDst4, roi.height );              
         }       
     };
