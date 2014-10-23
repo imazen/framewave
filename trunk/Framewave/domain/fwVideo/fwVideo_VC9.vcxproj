@@ -41,7 +41,7 @@
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='release_static|Win32'" Label="Configuration">
-    <ConfigurationType>Application</ConfigurationType>
+    <ConfigurationType>StaticLibrary</ConfigurationType>
     <PlatformToolset>v120</PlatformToolset>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='debug_static|Win32'" Label="Configuration">
@@ -130,6 +130,7 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='release_static|Win32'">
     <OutDir>..\..\build\bin\$(Configuration)_32\</OutDir>
     <IntDir>..\..\build\tmp\$(ProjectName)_$(Configuration)_32\</IntDir>
+    <TargetExt>.lib</TargetExt>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='release_static|x64'">
     <OutDir>..\..\build\bin\$(Configuration)_64\</OutDir>
