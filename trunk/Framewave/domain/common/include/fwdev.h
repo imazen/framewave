@@ -23,7 +23,7 @@ This software is subject to the Apache v2.0 License.
 //    Optimization level prefix macro
 //=======================================
 
-#define OPT_PREFIX tx
+#define OPT_PREFIX STDCALL 
 
 #define xPREFIX_OPT(PREFIX, FNAME) PREFIX##FNAME
 #define PREFIX_OPT(PREFIX, FNAME) xPREFIX_OPT(PREFIX, FNAME)
