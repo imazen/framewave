@@ -1,0 +1,310 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="debug_shared|Win32">
+      <Configuration>debug_shared</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="debug_shared|x64">
+      <Configuration>debug_shared</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="debug_static|Win32">
+      <Configuration>debug_static</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="debug_static|x64">
+      <Configuration>debug_static</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="release_shared|Win32">
+      <Configuration>release_shared</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="release_shared|x64">
+      <Configuration>release_shared</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="release_static|Win32">
+      <Configuration>release_static</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="release_static|x64">
+      <Configuration>release_static</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectName>common</ProjectName>
+    <ProjectGuid>{505E7C0B-5A63-488A-A6DD-C9026AA18134}</ProjectGuid>
+    <RootNamespace>common</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='release_static|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='debug_static|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='release_shared|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='debug_shared|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='release_static|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='debug_static|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='release_shared|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='debug_shared|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='release_static|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='debug_static|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='release_shared|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='debug_shared|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='release_static|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='debug_static|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='release_shared|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='debug_shared|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>12.0.21005.1</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='debug_shared|Win32'">
+    <OutDir>$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir>$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='debug_shared|x64'">
+    <IntDir>$(Platform)\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='release_shared|Win32'">
+    <OutDir>$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir>$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='release_shared|x64'">
+    <IntDir>$(Platform)\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='debug_static|Win32'">
+    <IntDir>$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='debug_static|x64'">
+    <IntDir>$(Platform)\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='release_static|Win32'">
+    <IntDir>$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='release_static|x64'">
+    <IntDir>$(Platform)\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='debug_shared|Win32'">
+    <CustomBuildStep>
+      <Message>Container for common includes</Message>
+      <Command />
+    </CustomBuildStep>
+    <ClCompile>
+      <AdditionalIncludeDirectories>$(SolutionDir)\Framewave\domain\common\include;$(SolutionDir)\Framewave\sdk\cbl;$(SolutionDir)\Framewave\domain\fwBase\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention />
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='debug_shared|x64'">
+    <CustomBuildStep>
+      <Message>Container for common includes</Message>
+      <Command />
+    </CustomBuildStep>
+    <ClCompile>
+      <AdditionalIncludeDirectories>$(SolutionDir)\Framewave\domain\common\include;$(SolutionDir)\Framewave\sdk\cbl;$(SolutionDir)\Framewave\domain\fwBase\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention />
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='release_shared|Win32'">
+    <CustomBuildStep>
+      <Message>Container for common includes</Message>
+      <Command />
+    </CustomBuildStep>
+    <ClCompile>
+      <AdditionalIncludeDirectories>$(SolutionDir)\Framewave\domain\common\include;$(SolutionDir)\Framewave\sdk\cbl;$(SolutionDir)\Framewave\domain\fwBase\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention />
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='release_shared|x64'">
+    <CustomBuildStep>
+      <Message>Container for common includes</Message>
+      <Command />
+    </CustomBuildStep>
+    <ClCompile>
+      <AdditionalIncludeDirectories>$(SolutionDir)\Framewave\domain\common\include;$(SolutionDir)\Framewave\sdk\cbl;$(SolutionDir)\Framewave\domain\fwBase\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention />
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='debug_static|Win32'">
+    <CustomBuildStep>
+      <Message>Container for common includes</Message>
+      <Command />
+    </CustomBuildStep>
+    <ClCompile>
+      <AdditionalIncludeDirectories>$(SolutionDir)\Framewave\domain\common\include;$(SolutionDir)\Framewave\sdk\cbl;$(SolutionDir)\Framewave\domain\fwBase\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention />
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='debug_static|x64'">
+    <CustomBuildStep>
+      <Message>Container for common includes</Message>
+      <Command />
+    </CustomBuildStep>
+    <ClCompile>
+      <AdditionalIncludeDirectories>$(SolutionDir)\Framewave\domain\common\include;$(SolutionDir)\Framewave\sdk\cbl;$(SolutionDir)\Framewave\domain\fwBase\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention />
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='release_static|Win32'">
+    <CustomBuildStep>
+      <Message>Container for common includes</Message>
+      <Command />
+    </CustomBuildStep>
+    <ClCompile>
+      <AdditionalIncludeDirectories>$(SolutionDir)\Framewave\domain\common\include;$(SolutionDir)\Framewave\sdk;$(SolutionDir)\Framewave\domain\fwBase\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention />
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='release_static|x64'">
+    <CustomBuildStep>
+      <Message>Container for common includes</Message>
+      <Command />
+    </CustomBuildStep>
+    <ClCompile>
+      <AdditionalIncludeDirectories>$(SolutionDir)\Framewave\domain\common\include;$(SolutionDir)\Framewave\sdk\cbl;$(SolutionDir)\Framewave\domain\fwBase\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention />
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="include\AC4Impl.h" />
+    <ClInclude Include="include\build.h" />
+    <ClInclude Include="include\buildnum.h" />
+    <ClInclude Include="include\Constants.h" />
+    <ClInclude Include="include\Exp.h" />
+    <ClInclude Include="include\fe.h" />
+    <ClInclude Include="include\fex.h" />
+    <ClInclude Include="include\fw_ref_emmintrin.h" />
+    <ClInclude Include="include\fw_ref_mmdefs.h" />
+    <ClInclude Include="include\fw_ref_pmmintrin.h" />
+    <ClInclude Include="include\fw_ref_xmmintrin.h" />
+    <ClInclude Include="include\fwdev.h" />
+    <ClInclude Include="include\FwSharedCode.h" />
+    <ClInclude Include="include\FwSharedCode_SSE2.h" />
+    <ClInclude Include="include\InitImpl.h" />
+    <ClInclude Include="include\Ln.h" />
+    <ClInclude Include="include\logical.h" />
+    <ClInclude Include="include\logical_Shift.h" />
+    <ClInclude Include="include\PointHandle.h" />
+    <ClInclude Include="include\shortcuts.h" />
+    <ClInclude Include="include\shuffle.h" />
+    <ClInclude Include="include\SSE2Intrinsic.h" />
+    <ClInclude Include="include\Statistics1.h" />
+    <ClInclude Include="include\system.h" />
+    <ClInclude Include="include\Trigonometric.h" />
+    <ClInclude Include="include\Trigonometric_NETLIB.h" />
+    <ClInclude Include="include\Arithmetic\Def\AbsDef.h" />
+    <ClInclude Include="include\Arithmetic\Def\AddDef.h" />
+    <ClInclude Include="include\Arithmetic\Def\DivDef.h" />
+    <ClInclude Include="include\Arithmetic\Def\MulDef.h" />
+    <ClInclude Include="include\Arithmetic\Def\SqrXDef.h" />
+    <ClInclude Include="include\Arithmetic\Def\SubDef.h" />
+    <ClInclude Include="include\Arithmetic\Impl\AbsImpl.h" />
+    <ClInclude Include="include\Arithmetic\Impl\AddImpl.h" />
+    <ClInclude Include="include\Arithmetic\Impl\DivImpl.h" />
+    <ClInclude Include="include\Arithmetic\Impl\MulImpl.h" />
+    <ClInclude Include="include\Arithmetic\Impl\SqrXImpl.h" />
+    <ClInclude Include="include\Arithmetic\Impl\SubImpl.h" />
+    <ClInclude Include="..\..\sdk\cbl\cbl.h" />
+    <ClInclude Include="..\..\sdk\cbl\cbl_arithmetic_primitives.h" />
+    <ClInclude Include="..\..\sdk\cbl\cbl_arithmetic_primitives_sse2.h" />
+    <ClInclude Include="..\..\sdk\cbl\cbl_arithmetic_primitives_sse3.h" />
+    <ClInclude Include="..\..\sdk\cbl\cbl_common_primitives.h" />
+    <ClInclude Include="..\..\sdk\cbl\cbl_declarations_gh.h" />
+    <ClInclude Include="..\..\sdk\cbl\cbl_declarations_ref.h" />
+    <ClInclude Include="..\..\sdk\cbl\cbl_declarations_sse2.h" />
+    <ClInclude Include="..\..\sdk\cbl\cbl_declarations_sse3.h" />
+    <ClInclude Include="..\..\sdk\cbl\cbl_exp.h" />
+    <ClInclude Include="..\..\sdk\cbl\cbl_ln.h" />
+    <ClInclude Include="..\..\sdk\cbl\cbl_logical_primitives.h" />
+    <ClInclude Include="..\..\sdk\cbl\cbl_logical_primitives_sse2.h" />
+    <ClInclude Include="..\..\sdk\cbl\cbl_math_primitives.h" />
+    <ClInclude Include="..\..\sdk\cbl\cbl_math_primitives_sse2.h" />
+    <ClInclude Include="..\..\sdk\cbl\cbl_memory_primitives.h" />
+    <ClInclude Include="..\..\sdk\cbl\cbl_memory_primitives_gh.h" />
+    <ClInclude Include="..\..\sdk\cbl\cbl_memory_primitives_sse2.h" />
+    <ClInclude Include="..\..\sdk\cbl\cbl_pack_unpack_primitives.h" />
+    <ClInclude Include="..\..\sdk\cbl\cbl_pack_unpack_primitives_sse2.h" />
+    <ClInclude Include="..\..\sdk\cbl\cbl_pow.h" />
+    <ClInclude Include="..\..\sdk\cbl\cbl_shuffle_primitives.h" />
+    <ClInclude Include="..\..\sdk\cbl\cbl_shuffle_primitives_gh.h" />
+    <ClInclude Include="..\..\sdk\cbl\cbl_shuffle_primitives_sse2.h" />
+    <ClInclude Include="..\..\sdk\cbl\cbl_sqrtCbrt.h" />
+    <ClInclude Include="..\..\sdk\cbl\cbl_support_primitives_sse2.h" />
+    <ClInclude Include="..\..\sdk\cbl\cbl_transpose_primitives.h" />
+    <ClInclude Include="..\..\sdk\cbl\cbl_transpose_primitives_sse2.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\Constants.cpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

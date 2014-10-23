@@ -23,6 +23,8 @@ This software is subject to the Apache v2.0 License.
 //    Optimization level prefix macro
 //=======================================
 
+#define OPT_PREFIX tx
+
 #define xPREFIX_OPT(PREFIX, FNAME) PREFIX##FNAME
 #define PREFIX_OPT(PREFIX, FNAME) xPREFIX_OPT(PREFIX, FNAME)
 
@@ -36,7 +38,7 @@ This software is subject to the Apache v2.0 License.
 //=======================================
 //    Static Assert
 //=======================================
-#define STATIC_ASSERT( arg ) static_assert<arg>()
+#define static_assert_x( arg ) static_assert_x<arg>()
 
 
 //=======================================
@@ -83,12 +85,12 @@ namespace OPT_LEVEL
 {
 
     template<bool b>
-    struct static_assert {};
+    struct static_assert_x {};
     template<>
-    struct static_assert<false>
+    struct static_assert_x<false>
     {
         private:
-            static_assert();
+            static_assert_x();
     };
 } // namespace OPT_LEVEL
 

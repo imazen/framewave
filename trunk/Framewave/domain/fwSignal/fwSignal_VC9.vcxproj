@@ -1,0 +1,307 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="debug_shared|Win32">
+      <Configuration>debug_shared</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="debug_shared|x64">
+      <Configuration>debug_shared</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="debug_static|Win32">
+      <Configuration>debug_static</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="debug_static|x64">
+      <Configuration>debug_static</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="release_shared|Win32">
+      <Configuration>release_shared</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="release_shared|x64">
+      <Configuration>release_shared</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="release_static|Win32">
+      <Configuration>release_static</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="release_static|x64">
+      <Configuration>release_static</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectName>fwSignal</ProjectName>
+    <ProjectGuid>{E337A654-D3C6-47F3-83F2-D14F8411D847}</ProjectGuid>
+    <RootNamespace>fwSignal</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='release_static|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='debug_static|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='release_shared|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='debug_shared|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='release_static|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='debug_static|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='release_shared|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='debug_shared|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='release_static|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='debug_static|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='release_shared|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='debug_shared|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='release_static|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='debug_static|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='release_shared|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='debug_shared|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>12.0.21005.1</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='debug_shared|Win32'">
+    <OutDir>..\..\build\bin\$(Configuration)_32\</OutDir>
+    <IntDir>..\..\build\tmp\$(ProjectName)_$(Configuration)_32\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='release_shared|Win32'">
+    <OutDir>..\..\build\bin\$(Configuration)_32\</OutDir>
+    <IntDir>..\..\build\tmp\$(ProjectName)_$(Configuration)_32\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='debug_static|Win32'">
+    <OutDir>..\..\build\bin\$(Configuration)_32\</OutDir>
+    <IntDir>..\..\build\tmp\$(ProjectName)_$(Configuration)_32\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='release_static|Win32'">
+    <OutDir>..\..\build\bin\$(Configuration)_32\</OutDir>
+    <IntDir>..\..\build\tmp\$(ProjectName)_$(Configuration)_32\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='debug_shared|x64'">
+    <OutDir>..\..\build\bin\$(Configuration)_64\</OutDir>
+    <IntDir>..\..\build\tmp\$(ProjectName)_$(Configuration)_64\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='release_shared|x64'">
+    <OutDir>..\..\build\bin\$(Configuration)_64\</OutDir>
+    <IntDir>..\..\build\tmp\$(ProjectName)_$(Configuration)_64\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='debug_static|x64'">
+    <OutDir>..\..\build\bin\$(Configuration)_64\</OutDir>
+    <IntDir>..\..\build\tmp\$(ProjectName)_$(Configuration)_64\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='release_static|x64'">
+    <OutDir>..\..\build\bin\$(Configuration)_64\</OutDir>
+    <IntDir>..\..\build\tmp\$(ProjectName)_$(Configuration)_64\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='debug_shared|Win32'">
+    <CustomBuildStep>
+      <Message>..\..\..\build_VC90.bat ..\.. $(TargetName) $(Platform) $(Configuration)</Message>
+      <Command>..\..\..\build_VC90.bat ..\.. $(TargetName) $(Platform) $(Configuration)
+</Command>
+      <Outputs>$(OutDir)$(ProjectName).dll;%(Outputs)</Outputs>
+    </CustomBuildStep>
+    <ClCompile>
+      <AdditionalIncludeDirectories>$(SolutionDir)\Framewave\domain\$(ProjectName)\include;$(SolutionDir)\Framewave\domain\common\include;$(SolutionDir)\Framewave\sdk\cbl;$(SolutionDir)\Framewave\domain\fwBase\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention />
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='release_shared|Win32'">
+    <CustomBuildStep>
+      <Message>..\..\..\build_VC90.bat ..\.. $(TargetName) $(Platform) $(Configuration)</Message>
+      <Command>..\..\..\build_VC90.bat ..\.. $(TargetName) $(Platform) $(Configuration)
+</Command>
+      <Outputs>$(OutDir)$(ProjectName).dll;%(Outputs)</Outputs>
+    </CustomBuildStep>
+    <ClCompile>
+      <AdditionalIncludeDirectories>$(SolutionDir)\Framewave\domain\$(ProjectName)\include;$(SolutionDir)\Framewave\domain\common\include;$(SolutionDir)\Framewave\sdk\cbl;$(SolutionDir)\Framewave\domain\fwBase\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention />
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='debug_static|Win32'">
+    <CustomBuildStep>
+      <Message>..\..\..\build_VC90.bat ..\.. $(TargetName) $(Platform) $(Configuration)</Message>
+      <Command>..\..\..\build_VC90.bat ..\.. $(TargetName) $(Platform) $(Configuration)
+</Command>
+      <Outputs>$(OutDir)$(ProjectName).lib;%(Outputs)</Outputs>
+    </CustomBuildStep>
+    <ClCompile>
+      <AdditionalIncludeDirectories>$(SolutionDir)\Framewave\domain\$(ProjectName)\include;$(SolutionDir)\Framewave\domain\common\include;$(SolutionDir)\Framewave\sdk\cbl;$(SolutionDir)\Framewave\domain\fwBase\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention />
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='release_static|Win32'">
+    <CustomBuildStep>
+      <Message>..\..\..\build_VC90.bat ..\.. $(TargetName) $(Platform) $(Configuration)</Message>
+      <Command>..\..\..\build_VC90.bat ..\.. $(TargetName) $(Platform) $(Configuration)
+</Command>
+      <Outputs>$(OutDir)$(ProjectName).lib;%(Outputs)</Outputs>
+    </CustomBuildStep>
+    <ClCompile>
+      <AdditionalIncludeDirectories>$(SolutionDir)\Framewave\domain\$(ProjectName)\include;$(SolutionDir)\Framewave\domain\common\include;$(SolutionDir)\Framewave\sdk;$(SolutionDir)\Framewave\domain\fwBase\include;$(SolutionDir)\Framewave\domain\common\include\Arithmetic\Impl;$(SolutionDir)\Framewave\sdk\cbl;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention />
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='debug_shared|x64'">
+    <CustomBuildStep>
+      <Message>..\..\..\build_VC90.bat ..\.. $(TargetName) $(Platform) $(Configuration)</Message>
+      <Command>..\..\..\build_VC90.bat ..\.. $(TargetName) $(Platform) $(Configuration)
+</Command>
+      <Outputs>$(OutDir)$(ProjectName).dll;%(Outputs)</Outputs>
+    </CustomBuildStep>
+    <ClCompile>
+      <AdditionalIncludeDirectories>$(SolutionDir)\Framewave\domain\$(ProjectName)\include;$(SolutionDir)\Framewave\domain\common\include;$(SolutionDir)\Framewave\sdk\cbl;$(SolutionDir)\Framewave\domain\fwBase\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention />
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='release_shared|x64'">
+    <CustomBuildStep>
+      <Message>..\..\..\build_VC90.bat ..\.. $(TargetName) $(Platform) $(Configuration)</Message>
+      <Command>..\..\..\build_VC90.bat ..\.. $(TargetName) $(Platform) $(Configuration)
+</Command>
+      <Outputs>$(OutDir)$(ProjectName).dll;%(Outputs)</Outputs>
+    </CustomBuildStep>
+    <ClCompile>
+      <AdditionalIncludeDirectories>$(SolutionDir)\Framewave\domain\$(ProjectName)\include;$(SolutionDir)\Framewave\domain\common\include;$(SolutionDir)\Framewave\sdk\cbl;$(SolutionDir)\Framewave\domain\fwBase\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention />
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='debug_static|x64'">
+    <CustomBuildStep>
+      <Message>..\..\..\build_VC90.bat ..\.. $(TargetName) $(Platform) $(Configuration)</Message>
+      <Command>..\..\..\build_VC90.bat ..\.. $(TargetName) $(Platform) $(Configuration)
+</Command>
+      <Outputs>$(OutDir)$(ProjectName).lib;%(Outputs)</Outputs>
+    </CustomBuildStep>
+    <ClCompile>
+      <AdditionalIncludeDirectories>$(SolutionDir)\Framewave\domain\$(ProjectName)\include;$(SolutionDir)\Framewave\domain\common\include;$(SolutionDir)\Framewave\sdk\cbl;$(SolutionDir)\Framewave\domain\fwBase\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention />
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='release_static|x64'">
+    <CustomBuildStep>
+      <Message>..\..\..\build_VC90.bat ..\.. $(TargetName) $(Platform) $(Configuration)</Message>
+      <Command>..\..\..\build_VC90.bat ..\.. $(TargetName) $(Platform) $(Configuration)
+</Command>
+      <Outputs>$(OutDir)$(ProjectName).lib;%(Outputs)</Outputs>
+    </CustomBuildStep>
+    <ClCompile>
+      <AdditionalIncludeDirectories>$(SolutionDir)\Framewave\domain\$(ProjectName)\include;$(SolutionDir)\Framewave\domain\common\include;$(SolutionDir)\Framewave\sdk\cbl;$(SolutionDir)\Framewave\domain\fwBase\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention />
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="src\Abs.cpp" />
+    <ClCompile Include="src\Add.cpp" />
+    <ClCompile Include="src\AddC.cpp" />
+    <ClCompile Include="src\AddX.cpp" />
+    <ClCompile Include="src\ArithmeticS.cpp" />
+    <ClCompile Include="src\AutoCorr.cpp" />
+    <ClCompile Include="src\ConversionS.cpp" />
+    <ClCompile Include="src\Div.cpp" />
+    <ClCompile Include="src\DivC.cpp" />
+    <ClCompile Include="src\Find.cpp" />
+    <ClCompile Include="src\FixedAccuArithmetic.cpp" />
+    <ClCompile Include="src\fwSignal.cpp" />
+    <ClCompile Include="src\LogicalS.cpp" />
+    <ClCompile Include="src\Malloc.cpp" />
+    <ClCompile Include="src\Mul.cpp" />
+    <ClCompile Include="src\MulC.cpp" />
+    <ClCompile Include="src\Sqr.cpp" />
+    <ClCompile Include="src\Sqrt.cpp" />
+    <ClCompile Include="src\StatisticsDotProduct.cpp" />
+    <ClCompile Include="src\StatisticsMinMax.cpp" />
+    <ClCompile Include="src\StatisticsNorm.cpp" />
+    <ClCompile Include="src\StatisticsS.cpp" />
+    <ClCompile Include="src\StatisticsS1.cpp" />
+    <ClCompile Include="src\Sub.cpp" />
+    <ClCompile Include="src\SubC.cpp" />
+    <ClCompile Include="src\SubCRev.cpp" />
+    <ClCompile Include="src\Threshold.cpp" />
+    <ClCompile Include="src\TrigonometricS.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\AutoCorr.h" />
+    <ClInclude Include="include\Conversion.h" />
+    <ClInclude Include="include\ConversionDef.h" />
+    <ClInclude Include="include\DivSqrtCbrt.h" />
+    <ClInclude Include="include\fwSignal.h" />
+    <ClInclude Include="include\fwSignal_opt.h" />
+    <ClInclude Include="include\Power.h" />
+    <ClInclude Include="include\StatisticsDotProduct.h" />
+    <ClInclude Include="include\StatisticsMinMax.h" />
+    <ClInclude Include="include\StatisticsNorm.h" />
+    <ClInclude Include="include\StatisticsS.h" />
+    <ClInclude Include="include\ThresholdDef.h" />
+    <ClInclude Include="include\ThresholdImp.h" />
+    <ClInclude Include="include\TrigonometricDef.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

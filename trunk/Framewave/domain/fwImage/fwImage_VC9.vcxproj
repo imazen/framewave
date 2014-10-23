@@ -1,0 +1,391 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="debug_shared|Win32">
+      <Configuration>debug_shared</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="debug_shared|x64">
+      <Configuration>debug_shared</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="debug_static|Win32">
+      <Configuration>debug_static</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="debug_static|x64">
+      <Configuration>debug_static</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="release_shared|Win32">
+      <Configuration>release_shared</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="release_shared|x64">
+      <Configuration>release_shared</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="release_static|Win32">
+      <Configuration>release_static</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="release_static|x64">
+      <Configuration>release_static</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectName>fwImage</ProjectName>
+    <ProjectGuid>{A8AD178A-CDC3-46C5-9207-FC55AAB99706}</ProjectGuid>
+    <RootNamespace>fwImage</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='release_static|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='debug_static|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='release_shared|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='debug_shared|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='release_static|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='debug_static|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='release_shared|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='debug_shared|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='release_static|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='debug_static|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='release_shared|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='debug_shared|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='release_static|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='debug_static|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='release_shared|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='debug_shared|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>12.0.21005.1</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='debug_shared|Win32'">
+    <OutDir>..\..\build\bin\$(Configuration)_32\</OutDir>
+    <IntDir>..\..\build\tmp\$(ProjectName)_$(Configuration)_32\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='debug_shared|x64'">
+    <OutDir>..\..\build\bin\$(Configuration)_64\</OutDir>
+    <IntDir>..\..\build\tmp\$(ProjectName)_$(Configuration)_64\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='release_shared|Win32'">
+    <OutDir>..\..\build\bin\$(Configuration)_32\</OutDir>
+    <IntDir>..\..\build\tmp\$(ProjectName)_$(Configuration)_32\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='release_shared|x64'">
+    <OutDir>..\..\build\bin\$(Configuration)_64\</OutDir>
+    <IntDir>..\..\build\tmp\$(ProjectName)_$(Configuration)_64\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='debug_static|Win32'">
+    <OutDir>..\..\build\bin\$(Configuration)_32\</OutDir>
+    <IntDir>..\..\build\tmp\$(ProjectName)_$(Configuration)_32\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='debug_static|x64'">
+    <OutDir>..\..\build\bin\$(Configuration)_64\</OutDir>
+    <IntDir>..\..\build\tmp\$(ProjectName)_$(Configuration)_64\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='release_static|Win32'">
+    <OutDir>..\..\build\bin\$(Configuration)_32\</OutDir>
+    <IntDir>..\..\build\tmp\$(ProjectName)_$(Configuration)_32\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='release_static|x64'">
+    <OutDir>..\..\build\bin\$(Configuration)_64\</OutDir>
+    <IntDir>..\..\build\tmp\$(ProjectName)_$(Configuration)_64\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='debug_shared|Win32'">
+    <CustomBuildStep>
+      <Message>..\..\..\build_VC90.bat ..\.. $(TargetName) $(Platform) $(Configuration)</Message>
+      <Command>..\..\..\build_VC90.bat ..\.. $(TargetName) $(Platform) $(Configuration)
+</Command>
+      <Outputs>$(OutDir)$(ProjectName).dll;%(Outputs)</Outputs>
+    </CustomBuildStep>
+    <ClCompile>
+      <AdditionalIncludeDirectories>$(SolutionDir)\Framewave\domain\$(ProjectName)\include;$(SolutionDir)\Framewave\domain\common\include;$(SolutionDir)\Framewave\sdk\cbl;$(SolutionDir)\Framewave\domain\fwBase\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention />
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='debug_shared|x64'">
+    <CustomBuildStep>
+      <Message>..\..\..\build_VC90.bat ..\.. $(TargetName) $(Platform) $(Configuration)</Message>
+      <Command>..\..\..\build_VC90.bat ..\.. $(TargetName) $(Platform) $(Configuration)
+</Command>
+      <Outputs>$(OutDir)$(ProjectName).dll;%(Outputs)</Outputs>
+    </CustomBuildStep>
+    <ClCompile>
+      <AdditionalIncludeDirectories>$(SolutionDir)\Framewave\domain\$(ProjectName)\include;$(SolutionDir)\Framewave\domain\common\include;$(SolutionDir)\Framewave\sdk\cbl;$(SolutionDir)\Framewave\domain\fwBase\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention />
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='release_shared|Win32'">
+    <CustomBuildStep>
+      <Message>..\..\..\build_VC90.bat ..\.. $(TargetName) $(Platform) $(Configuration)</Message>
+      <Command>..\..\..\build_VC90.bat ..\.. $(TargetName) $(Platform) $(Configuration)
+</Command>
+      <Outputs>$(OutDir)$(ProjectName).dll;%(Outputs)</Outputs>
+    </CustomBuildStep>
+    <ClCompile>
+      <AdditionalIncludeDirectories>$(SolutionDir)\Framewave\domain\$(ProjectName)\include;$(SolutionDir)\Framewave\domain\common\include;$(SolutionDir)\Framewave\sdk\cbl;$(SolutionDir)\Framewave\domain\fwBase\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention />
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='release_shared|x64'">
+    <CustomBuildStep>
+      <Message>..\..\..\build_VC90.bat ..\.. $(TargetName) $(Platform) $(Configuration)</Message>
+      <Command>..\..\..\build_VC90.bat ..\.. $(TargetName) $(Platform) $(Configuration)
+</Command>
+      <Outputs>$(OutDir)$(ProjectName).dll;%(Outputs)</Outputs>
+    </CustomBuildStep>
+    <ClCompile>
+      <AdditionalIncludeDirectories>$(SolutionDir)\Framewave\domain\$(ProjectName)\include;$(SolutionDir)\Framewave\domain\common\include;$(SolutionDir)\Framewave\sdk\cbl;$(SolutionDir)\Framewave\domain\fwBase\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention />
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='debug_static|Win32'">
+    <CustomBuildStep>
+      <Message>..\..\..\build_VC90.bat ..\.. $(TargetName) $(Platform) $(Configuration)</Message>
+      <Command>..\..\..\build_VC90.bat ..\.. $(TargetName) $(Platform) $(Configuration)
+</Command>
+      <Outputs>$(OutDir)$(ProjectName).lib;%(Outputs)</Outputs>
+    </CustomBuildStep>
+    <ClCompile>
+      <AdditionalIncludeDirectories>$(SolutionDir)\Framewave\domain\$(ProjectName)\include;$(SolutionDir)\Framewave\domain\common\include;$(SolutionDir)\Framewave\sdk\cbl;$(SolutionDir)\Framewave\domain\fwBase\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention />
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='debug_static|x64'">
+    <CustomBuildStep>
+      <Message>..\..\..\build_VC90.bat ..\.. $(TargetName) $(Platform) $(Configuration)</Message>
+      <Command>..\..\..\build_VC90.bat ..\.. $(TargetName) $(Platform) $(Configuration)
+</Command>
+      <Outputs>$(OutDir)$(ProjectName).lib;%(Outputs)</Outputs>
+    </CustomBuildStep>
+    <ClCompile>
+      <AdditionalIncludeDirectories>$(SolutionDir)\Framewave\domain\$(ProjectName)\include;$(SolutionDir)\Framewave\domain\common\include;$(SolutionDir)\Framewave\sdk\cbl;$(SolutionDir)\Framewave\domain\fwBase\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention />
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='release_static|Win32'">
+    <CustomBuildStep>
+      <Message>..\..\..\build_VC90.bat ..\.. $(TargetName) $(Platform) $(Configuration)</Message>
+      <Command>..\..\..\build_VC90.bat ..\.. $(TargetName) $(Platform) $(Configuration)
+</Command>
+      <Outputs>$(OutDir)$(ProjectName).lib;%(Outputs)</Outputs>
+    </CustomBuildStep>
+    <ClCompile>
+      <AdditionalIncludeDirectories>$(SolutionDir)\Framewave\domain\$(ProjectName)\include;$(SolutionDir)\Framewave\domain\common\include;$(SolutionDir)\Framewave\sdk;$(SolutionDir)\Framewave\domain\fwBase\include;$(SolutionDir)\Framewave\domain\common\include\Arithmetic\Impl;$(SolutionDir)\Framewave\sdk\cbl;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention />
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='release_static|x64'">
+    <CustomBuildStep>
+      <Message>..\..\..\build_VC90.bat ..\.. $(TargetName) $(Platform) $(Configuration)</Message>
+      <Command>..\..\..\build_VC90.bat ..\.. $(TargetName) $(Platform) $(Configuration)
+</Command>
+      <Outputs>$(OutDir)$(ProjectName).lib;%(Outputs)</Outputs>
+    </CustomBuildStep>
+    <ClCompile>
+      <AdditionalIncludeDirectories>$(SolutionDir)\Framewave\domain\$(ProjectName)\include;$(SolutionDir)\Framewave\domain\common\include;$(SolutionDir)\Framewave\sdk\cbl;$(SolutionDir)\Framewave\domain\fwBase\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention />
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="src\3D-LUT.cpp" />
+    <ClCompile Include="src\Abs.cpp" />
+    <ClCompile Include="src\AbsDiffX.cpp" />
+    <ClCompile Include="src\Add.cpp" />
+    <ClCompile Include="src\AddC.cpp" />
+    <ClCompile Include="src\AddX.cpp" />
+    <ClCompile Include="src\ArithmeticI.cpp" />
+    <ClCompile Include="src\ColorFormatConversion.cpp" />
+    <ClCompile Include="src\colorModelConversion.cpp" />
+    <ClCompile Include="src\colorModelConversion_RGB_YCBCR.cpp" />
+    <ClCompile Include="src\colorModelConversion_RGB_YUV.cpp" />
+    <ClCompile Include="src\ColorToGray.cpp" />
+    <ClCompile Include="src\Compare.cpp" />
+    <ClCompile Include="src\Convert.cpp" />
+    <ClCompile Include="src\Copy.cpp" />
+    <ClCompile Include="src\Dilate.cpp" />
+    <ClCompile Include="src\Dilate3x3.cpp" />
+    <ClCompile Include="src\DilateBorderReplicate.cpp" />
+    <ClCompile Include="src\Div.cpp" />
+    <ClCompile Include="src\DivC.cpp" />
+    <ClCompile Include="src\Erode.cpp" />
+    <ClCompile Include="src\Erode3x3.cpp" />
+    <ClCompile Include="src\ErodeBorderReplicate.cpp" />
+    <ClCompile Include="src\Filter.cpp" />
+    <ClCompile Include="src\FilterBasic.cpp" />
+    <ClCompile Include="src\FilterConvolution.cpp" />
+    <ClCompile Include="src\FilterFixed.cpp" />
+    <ClCompile Include="src\FilterFixedWithBorder.cpp" />
+    <ClCompile Include="src\FilterGeneral.cpp" />
+    <ClCompile Include="src\FilterMedian.cpp" />
+    <ClCompile Include="src\FilterSeparable.cpp" />
+    <ClCompile Include="src\FilterSeparableBorderPipeline.cpp" />
+    <ClCompile Include="src\FilterWiener.cpp" />
+    <ClCompile Include="src\FormatConversion.cpp" />
+    <ClCompile Include="src\fwImage.cpp" />
+    <ClCompile Include="src\ImageJaehne.cpp" />
+    <ClCompile Include="src\ImageRamp.cpp" />
+    <ClCompile Include="src\LinearDCT.cpp" />
+    <ClCompile Include="src\LogicalIAnd.cpp" />
+    <ClCompile Include="src\LogicalINot.cpp" />
+    <ClCompile Include="src\LogicalIOr.cpp" />
+    <ClCompile Include="src\LogicalIXor.cpp" />
+    <ClCompile Include="src\LogicalLShiftI.cpp" />
+    <ClCompile Include="src\LogicalRShiftI.cpp" />
+    <ClCompile Include="src\Mirror.cpp" />
+    <ClCompile Include="src\MorphAdvFree.cpp" />
+    <ClCompile Include="src\MorphAdvGetSize.cpp" />
+    <ClCompile Include="src\MorphAdvInit.cpp" />
+    <ClCompile Include="src\MorphAdvInitAlloc.cpp" />
+    <ClCompile Include="src\MorphBlackhatBorder.cpp" />
+    <ClCompile Include="src\MorphCloseBorder.cpp" />
+    <ClCompile Include="src\MorphGradientBorder.cpp" />
+    <ClCompile Include="src\MorphologyFree.cpp" />
+    <ClCompile Include="src\MorphologyGetSize.cpp" />
+    <ClCompile Include="src\MorphologyInit.cpp" />
+    <ClCompile Include="src\MorphologyInitAlloc.cpp" />
+    <ClCompile Include="src\MorphOpenBorder.cpp" />
+    <ClCompile Include="src\MorphReconstructDilate.cpp" />
+    <ClCompile Include="src\MorphTophatBorder.cpp" />
+    <ClCompile Include="src\Mul.cpp" />
+    <ClCompile Include="src\MulC.cpp" />
+    <ClCompile Include="src\MulXScale.cpp" />
+    <ClCompile Include="src\Remap.cpp" />
+    <ClCompile Include="src\Resize.cpp" />
+    <ClCompile Include="src\Resize_50.cpp" />
+    <ClCompile Include="src\ResizeCenter.cpp" />
+    <ClCompile Include="src\ResizeShift.cpp" />
+    <ClCompile Include="src\Rotate.cpp" />
+    <ClCompile Include="src\Scale.cpp" />
+    <ClCompile Include="src\Set.cpp" />
+    <ClCompile Include="src\Shear.cpp" />
+    <ClCompile Include="src\Sqr.cpp" />
+    <ClCompile Include="src\Sqrt.cpp" />
+    <ClCompile Include="src\StatICountinRange.cpp" />
+    <ClCompile Include="src\StatIMean.cpp" />
+    <ClCompile Include="src\StatIMinMax.cpp" />
+    <ClCompile Include="src\StatISum.cpp" />
+    <ClCompile Include="src\Sub.cpp" />
+    <ClCompile Include="src\SubC.cpp" />
+    <ClCompile Include="src\Support.cpp" />
+    <ClCompile Include="src\SwapChannels.cpp" />
+    <ClCompile Include="src\Threshold.cpp" />
+    <ClCompile Include="src\ThresholdGT.cpp" />
+    <ClCompile Include="src\ThresholdLT.cpp" />
+    <ClCompile Include="src\WarpAffine.cpp" />
+    <ClCompile Include="src\WarpBilinear.cpp" />
+    <ClCompile Include="src\WarpPerspective.cpp" />
+    <ClCompile Include="src\ZigZag.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\3D-LUT.h" />
+    <ClInclude Include="include\BordersReplication.h" />
+    <ClInclude Include="include\color.h" />
+    <ClInclude Include="include\ColorFormatConversion.h" />
+    <ClInclude Include="include\colorModelConvConst.h" />
+    <ClInclude Include="include\colorModelConversion.h" />
+    <ClInclude Include="include\colorModelConversionDefs.h" />
+    <ClInclude Include="include\colorModelConvSpecial.h" />
+    <ClInclude Include="include\colorModelConvSpecialDef.h" />
+    <ClInclude Include="include\ColorToGray.h" />
+    <ClInclude Include="include\Convert.h" />
+    <ClInclude Include="include\ConvertDef.h" />
+    <ClInclude Include="include\Copy.h" />
+    <ClInclude Include="include\CopyDef.h" />
+    <ClInclude Include="include\Filter.h" />
+    <ClInclude Include="include\Filter_ProcessorTemplates.h" />
+    <ClInclude Include="include\FiltersFixed.h" />
+    <ClInclude Include="include\formatConversion.h" />
+    <ClInclude Include="include\fwImage.h" />
+    <ClInclude Include="include\fwImage_opt.h" />
+    <ClInclude Include="include\fwImageIntroDoc.h" />
+    <ClInclude Include="include\ImageJaehne.h" />
+    <ClInclude Include="include\ImageRamp.h" />
+    <ClInclude Include="include\Morphology.h" />
+    <ClInclude Include="include\Resize.h" />
+    <ClInclude Include="include\Scale.h" />
+    <ClInclude Include="include\ScaleDef.h" />
+    <ClInclude Include="include\Set.h" />
+    <ClInclude Include="include\SetDef.h" />
+    <ClInclude Include="include\StatICountinRange.h" />
+    <ClInclude Include="include\StatIMinMax.h" />
+    <ClInclude Include="include\StatISum.h" />
+    <ClInclude Include="include\Support.h" />
+    <ClInclude Include="include\SwapChannels.h" />
+    <ClInclude Include="include\SwapChannelsDef.h" />
+    <ClInclude Include="include\ThresholdIdef.h" />
+    <ClInclude Include="include\ThresholdIimp.h" />
+    <ClInclude Include="include\TransposeBlockOptimizedCode.hpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
